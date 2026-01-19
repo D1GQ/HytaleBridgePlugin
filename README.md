@@ -118,7 +118,7 @@ public class MiniGameWorld extends BridgeWorldComponent {
     
     @Override
     public void onTick(BridgeWorld bWorld, float deltaTime) {
-        gameTimer--;
+        gameTimer -= deltaTime;
         if (gameTimer <= 0) {
             endGame(bWorld);
         }
