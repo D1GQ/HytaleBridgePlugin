@@ -4,7 +4,6 @@ import java.util.Collection;
 import java.util.function.Consumer;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-
 import com.bridge.api.modules.BridgeWorld;
 import com.bridge.api.modules.BridgeWorldComponent;
 import com.bridge.core.factory.BridgeWorldFactory;

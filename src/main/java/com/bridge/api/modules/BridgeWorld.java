@@ -2,7 +2,6 @@ package com.bridge.api.modules;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
-
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import com.bridge.core.plugin.BridgePlugin;
