@@ -28,7 +28,7 @@ public class BridgeWorldManager {
      * 
      * @see BridgeWorldFactory#GetAllBridgeWorlds()
      */
-    public static Collection<BridgeWorld> getAllVBridgeWorlds() {
+    public static Collection<BridgeWorld> getAllBridgeWorlds() {
         return BridgeWorldFactory.GetAllBridgeWorlds();
     }
 
