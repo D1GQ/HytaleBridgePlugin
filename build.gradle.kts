@@ -2,10 +2,6 @@ plugins {
     id("java")
 }
 
-java {
-    modularity.inferModulePath = true
-}
-
 group = "com.d1gq"
 version = "1.0-SNAPSHOT"
 
