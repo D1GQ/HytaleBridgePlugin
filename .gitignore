@@ -1,0 +1,5 @@
+.gradle
+build
+app
+bin
+libs/HytaleServer.jar

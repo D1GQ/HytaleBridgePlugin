@@ -1,0 +1,6 @@
+{
+  "Group": "com.d1gq",
+  "Name": "BridgePlugin",
+  "Version": "1.0.0",
+  "Main": "com.bridge.core.plugin.BridgePlugin"
+}
