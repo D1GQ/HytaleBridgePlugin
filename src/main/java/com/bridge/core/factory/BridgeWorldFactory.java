@@ -54,6 +54,12 @@ public class BridgeWorldFactory {
         return bridgeWorld;
     }
 
+    @Nullable
+    public static BridgeWorld getBridgeWorldByUUID(UUID uuid) {
+        BridgeWorld bridgeWorld = map.get(uuid);
+        return bridgeWorld;
+    }
+
     public static void releaseBridgeWorld(@Nonnull BridgeWorld bWorld) {
         map.remove(bWorld.getWorld().getWorldConfig().getUuid());
     }

@@ -1,6 +1,7 @@
 package com.bridge.api;
 
 import java.util.Collection;
+import java.util.UUID;
 import java.util.function.Consumer;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -30,6 +31,30 @@ public class BridgeWorldManager {
      */
     public static Collection<BridgeWorld> getAllBridgeWorlds() {
         return BridgeWorldFactory.GetAllBridgeWorlds();
+    }
+
+    /**
+     * Retrieves a {@link BridgeWorld} instance by its unique identifier (UUID).
+     * 
+     * <p>This method looks up a BridgeWorld in the registry using its UUID.
+     * The UUID corresponds to the underlying Hypixel Hytale world's UUID,
+     * ensuring consistent identification across system boundaries.
+     * 
+     * @param uuid The unique identifier of the world to retrieve. 
+     *             This should be the UUID of the underlying {@link World} instance.
+     *             Must not be null.
+     * 
+     * @return The {@link BridgeWorld} instance associated with the given UUID,
+     *         or {@code null} if no world with that UUID is currently registered
+     *         in the Bridge framework. A world may not be registered if it hasn't
+     *         been loaded through Bridge, was recently deleted, or belongs to
+     *         another system.
+     * 
+     * @see BridgeWorldFactory#getBridgeWorldByUUID()
+     */
+    @Nullable
+    public static BridgeWorld getBridgeWorldByUUID(@Nonnull UUID uuid) {
+        return BridgeWorldFactory.getBridgeWorldByUUID(uuid);
     }
 
     /**

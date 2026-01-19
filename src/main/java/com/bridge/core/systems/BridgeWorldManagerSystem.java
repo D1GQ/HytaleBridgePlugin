@@ -218,7 +218,7 @@ public final class BridgeWorldManagerSystem implements TickableSystem<ChunkStore
             });
     }
 
-    public Boolean deactivateWorld(@Nonnull BridgeWorld bWorld, @Nullable World movePlayersTo) {
+    public boolean deactivateWorld(@Nonnull BridgeWorld bWorld, @Nullable World movePlayersTo) {
         BridgePlugin.logger().atInfo().log("Starting deactivating world " + bWorld.bWorldName);
         if (movePlayersTo == null)
         {

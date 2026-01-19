@@ -24,7 +24,7 @@ public final class BridgeWorld {
     /** The display name of this BridgeWorld. */
     public String bWorldName;
     /** Whether this world is currently active and loaded. */
-    public Boolean active = false;
+    public boolean active = false;
 
     private World hWorld;
     private BridgeWorldComponent bWorldComponent;
@@ -91,7 +91,7 @@ public final class BridgeWorld {
      * @see #deactivate(World)
      * @see BridgeWorldManagerSystem#deactivateWorld(BridgeWorld, World)
      */
-    public Boolean deactivate() {
+    public boolean deactivate() {
         return deactivate(null);
     }
 
@@ -107,7 +107,7 @@ public final class BridgeWorld {
      * 
      * @see BridgeWorldManagerSystem#deactivateWorld(BridgeWorld, World)
      */
-    public Boolean deactivate(@Nullable World movePlayersTo) {
+    public boolean deactivate(@Nullable World movePlayersTo) {
         return BridgeWorldManagerSystem.get().deactivateWorld(this, movePlayersTo);
     }
 
